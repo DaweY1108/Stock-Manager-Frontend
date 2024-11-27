@@ -2,7 +2,7 @@ const API_URL = 'https://localhost:7126/api/Stock';
 
 export const getStocks = async () => {
     try {
-      const response = await fetch('https://localhost:7126/api/Stock', {
+      const response = await fetch(API_URL, {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',

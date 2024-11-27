@@ -12,6 +12,7 @@ const StockList = () => {
   const [deletingStockId, setDeletingStockId] = useState(null);
 
   useEffect(() => {
+    document.title = 'Stock Manager';
     const fetchData = async () => {
       try {
         const result = await getStocks();
@@ -58,7 +59,7 @@ const StockList = () => {
       } catch (error) {
         console.error('Error deleting stock:', error);
       }
-    }, 300); // Delay to allow animation to complete
+    }, 300); 
   };
 
   return (
